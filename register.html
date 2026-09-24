@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Clash of BaNG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="logo"><span class="logo-bracket">[</span><span class="logo-text">CLASH OF BANG</span><span class="logo-bracket">]</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="troops.html">Troops</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+      </ul>
+    </nav>
+    <a href="register.html" class="join-btn">Join Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+  </header>
+
+  <!-- REGISTER SECTION -->
+  <section class="register-section">
+    <div class="register-wrapper">
+
+      <!-- TOP ACCENT BAR -->
+      <div class="register-banner">
+        <p class="systems-online"><span class="online-dot"></span> SYSTEMS ONLINE &mdash; NODE: ALPHA-7 &mdash; V. 4.02.1</p>
+        <h2>SECURE YOUR <span class="highlight">LEGACY</span></h2>
+      </div>
+
+      <!-- RIGHT PANEL - FORM -->
+      <div class="register-form-box">
+        <h3>REGISTER</h3>
+        <p class="form-subtitle">Initialize your combat sequence in the BANG ecosystem.</p>
+        <p class="form-required"><span class="critical-badge">CRITICAL</span> All fields are required</p>
+
+        <!-- 5 Form components: text input, email, radio (gender), number, select (dropdown), textarea -->
+        <div id="formError" class="form-error-msg" style="display:none;"></div>
+
+        <div class="double-input">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" placeholder="GHOST RIDER" autocomplete="off">
+            <span class="field-error" id="fullNameErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="emailAddr">Email Address</label>
+            <input type="email" id="emailAddr" placeholder="OPERATOR@BANG.SYSTEM" autocomplete="off">
+            <span class="field-error" id="emailErr"></span>
+          </div>
+        </div>
+
+        <!-- Gender: radio buttons (form component #3) -->
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-group">
+            <label class="radio-label"><input type="radio" name="gender" value="male"> MALE</label>
+            <label class="radio-label"><input type="radio" name="gender" value="female"> FEMALE</label>
+            <label class="radio-label"><input type="radio" name="gender" value="non-binary"> NON-BINARY</label>
+          </div>
+          <span class="field-error" id="genderErr"></span>
+        </div>
+
+        <!-- Age: number input (form component #4) -->
+        <div class="form-group">
+          <label for="ageInput">Age</label>
+          <input type="number" id="ageInput" placeholder="17" min="1" max="120">
+          <span class="field-error" id="ageErr"></span>
+        </div>
+
+        <!-- Favorite Troop: select dropdown (form component #5) -->
+        <div class="form-group">
+          <label for="favTroop">Favorite Troop</label>
+          <select id="favTroop">
+            <option value="">SELECT SPECIALIZATION</option>
+            <option value="vanguard-x">VANGUARD-X</option>
+            <option value="shadow-mk-ii">SHADOW MK-II</option>
+            <option value="bulwark-9">BULWARK-9</option>
+            <option value="viper-protocol">VIPER PROTOCOL</option>
+            <option value="xenon-v">XENON V</option>
+          </select>
+          <span class="field-error" id="troopErr"></span>
+        </div>
+
+        <!-- Reason: textarea (form component already counted as text, this is a textarea variant) -->
+        <div class="form-group">
+          <label for="reasonJoin">Reason to Join</label>
+          <textarea id="reasonJoin" placeholder="STATE YOUR MOTIVATION FOR ENLISTMENT..."></textarea>
+          <span class="field-error" id="reasonErr"></span>
+        </div>
+
+        <button class="submit-btn" id="submitBtn" type="button">INITIALIZE DEPLOYMENT &rarr;</button>
+        <p class="form-login">Already authenticated? <a href="#" class="access-link">ACCESS TERMINAL</a></p>
+
+        <!-- Success message -->
+        <div id="successMsg" class="form-success-msg" style="display:none;">
+          &#10003; Deployment initialized. Welcome to the network, operative.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; 2024 CLASH OF BANG. ALL RIGHTS RESERVED.</p>
+      <div class="footer-nav">
+        <a href="#">PRIVACY</a>
+        <a href="#">TERMS</a>
+        <a href="#">GUIDELINES</a>
+        <a href="#">SUPPORT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

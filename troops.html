@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Troops | Clash of BaNG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="logo"><span class="logo-bracket">[</span><span class="logo-text">CLASH OF BANG</span><span class="logo-bracket">]</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="troops.html" class="active">Troops</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+    <a href="register.html" class="join-btn">Join Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+  </header>
+
+  <!-- PAGE HERO - Troops style with watermark text -->
+  <section class="troops-page-hero">
+    <div class="troops-hero-left">
+      <h1>TROOPS <span class="live-badge">&#9679; LIVE COMBAT DATA FEED</span></h1>
+      <p>Access the global vanguard database. Review real-time combat performance metrics and tactical deployments for the Bang Ecosystem's elite strike forces.</p>
+    </div>
+    <div class="troops-hero-watermark">B.A.N.G.</div>
+  </section>
+
+  <!-- SEARCH & FILTER BAR -->
+  <section class="troops-filter-bar">
+    <div class="troops-filter-inner">
+      <div class="search-group">
+        <label class="search-label">Search manifest ...</label>
+        <div class="search-input-wrap">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" id="troopSearch" placeholder="Scanning database..." class="troop-search-input">
+        </div>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label">Role</label>
+        <div class="role-btns">
+          <button class="role-btn active" data-role="all">ALL</button>
+          <button class="role-btn" data-role="scout">SCOUT</button>
+          <button class="role-btn" data-role="tank">TANK</button>
+        </div>
+      </div>
+      <div class="filter-group">
+        <label class="filter-label">Rarity</label>
+        <select class="rarity-select" id="rarityFilter">
+          <option value="all">ALL ENTRIES &#9660;</option>
+          <option value="legendary">LEGENDARY</option>
+          <option value="epic">EPIC</option>
+          <option value="rare">RARE</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- TROOPS GRID - full-bleed image + overlay name -->
+  <section class="troops-page-section">
+    <div class="troops-fullbleed-grid" id="troopsGrid">
+
+      <div class="troop-fullbleed-card" data-role="tank" data-rarity="legendary" data-name="XENON V">
+        <div class="troop-fullbleed-img troop-img-1"></div>
+        <div class="troop-fullbleed-info">
+          <div class="troop-badges">
+            <div class="troop-rarity-badge badge-legendary">LEGENDARY</div>
+            <div class="troop-role-badge">COMMANDER</div>
+          </div>
+          <h3>XENON V</h3>
+          <div class="troop-power-bar">
+            <div class="power-dots"><span class="dot  active"></span><span class="dot  active"></span><span class="dot  active"></span><span class="dot  active"></span><span class="dot"></span></div>
+            <span class="troop-power-icon">&#9889;</span>
+          </div>
+          <p class="troop-power-val">POWER: 12,400</p>
+          <div class="troop-hover-stats">
+              <div><span class="troop-stat-icon">&#10084;</span><div class="troop-stat-text"><h4>Hitpoints</h4><p>8,500</p></div></div>
+              <div><span class="troop-stat-icon">&#9889;</span><div class="troop-stat-text"><h4>DPS</h4><p>1,240</p></div></div>
+              <div><span class="troop-stat-icon">&#9654;</span><div class="troop-stat-text"><h4>Range</h4><p>Long</p></div></div>
+              <div><span class="troop-stat-icon">&#9733;</span><div class="troop-stat-text"><h4>Damage Type</h4><p>Area</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="troop-fullbleed-card" data-role="scout" data-rarity="epic" data-name="SHADOW MK-II">
+        <div class="troop-fullbleed-img troop-img-2"></div>
+        <div class="troop-fullbleed-info">
+          <div class="troop-badges">
+            <div class="troop-rarity-badge badge-epic">EPIC</div>
+            <div class="troop-role-badge">ASSASSIN</div>
+          </div>
+          <h3>SHADOW MK-II</h3>
+          <div class="troop-power-bar">
+            <div class="power-dots"><span class="dot  active"></span><span class="dot  active"></span><span class="dot  active"></span><span class="dot"></span><span class="dot"></span></div>
+            <span class="troop-power-icon">&#128584;</span>
+          </div>
+          <p class="troop-power-val">POWER: 9,800</p>
+          <div class="troop-hover-stats">
+              <div><span class="troop-stat-icon">&#10084;</span><div class="troop-stat-text"><h4>Hitpoints</h4><p>4,200</p></div></div>
+              <div><span class="troop-stat-icon">&#9889;</span><div class="troop-stat-text"><h4>DPS</h4><p>980</p></div></div>
+              <div><span class="troop-stat-icon">&#9654;</span><div class="troop-stat-text"><h4>Range</h4><p>Mid</p></div></div>
+              <div><span class="troop-stat-icon">&#9733;</span><div class="troop-stat-text"><h4>Damage Type</h4><p>Single</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="troop-fullbleed-card" data-role="tank" data-rarity="rare" data-name="BULWARK-9">
+        <div class="troop-fullbleed-img troop-img-3"></div>
+        <div class="troop-fullbleed-info">
+          <div class="troop-badges">
+            <div class="troop-rarity-badge badge-rare">RARE</div>
+            <div class="troop-role-badge">TANK</div>
+          </div>
+          <h3>BULWARK-9</h3>
+          <div class="troop-power-bar">
+            <div class="power-dots"><span class="dot  active"></span><span class="dot  active"></span><span class="dot  active"></span><span class="dot"></span><span class="dot"></span></div>
+            <span class="troop-power-icon">&#9737;</span>
+          </div>
+          <p class="troop-power-val">POWER: 7,200</p>
+          <div class="troop-hover-stats">
+              <div><span class="troop-stat-icon">&#10084;</span><div class="troop-stat-text"><h4>Hitpoints</h4><p>11,000</p></div></div>
+              <div><span class="troop-stat-icon">&#9889;</span><div class="troop-stat-text"><h4>DPS</h4><p>420</p></div></div>
+              <div><span class="troop-stat-icon">&#9654;</span><div class="troop-stat-text"><h4>Range</h4><p>Short</p></div></div>
+              <div><span class="troop-stat-icon">&#9733;</span><div class="troop-stat-text"><h4>Damage Type</h4><p>Burst</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="troop-fullbleed-card" data-role="scout" data-rarity="legendary" data-name="VIPER PROTOCOL">
+        <div class="troop-fullbleed-img troop-img-4"></div>
+        <div class="troop-fullbleed-info">
+          <div class="troop-badges">
+            <div class="troop-rarity-badge badge-legendary">LEGENDARY</div>
+            <div class="troop-role-badge">SCOUT</div>
+          </div>
+          <h3>VIPER PROTOCOL</h3>
+          <div class="troop-power-bar">
+            <div class="power-dots"><span class="dot  active"></span><span class="dot  active"></span><span class="dot  active"></span><span class="dot  active"></span><span class="dot"></span></div>
+            <span class="troop-power-icon">&#9737;</span>
+          </div>
+          <p class="troop-power-val">POWER: 11,950</p>
+          <div class="troop-hover-stats">
+              <div><span class="troop-stat-icon">&#10084;</span><div class="troop-stat-text"><h4>Hitpoints</h4><p>5,600</p></div></div>
+              <div><span class="troop-stat-icon">&#9889;</span><div class="troop-stat-text"><h4>DPS</h4><p>1,100</p></div></div>
+              <div><span class="troop-stat-icon">&#9654;</span><div class="troop-stat-text"><h4>Range</h4><p>Long</p></div></div>
+              <div><span class="troop-stat-icon">&#9733;</span><div class="troop-stat-text"><h4>Damage Type</h4><p>Rapid Burst</p></div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+    <div class="troops-pagination">
+      <p class="troops-count">Displaying 4 of 124 combat entries</p>
+      <button class="load-more-btn">LOAD MORE TROOPS</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-bottom">
+      <p>&copy; 2024 CLASH OF BANG. ALL RIGHTS RESERVED.</p>
+      <div class="footer-nav">
+        <a href="#">PRIVACY</a>
+        <a href="#">TERMS</a>
+        <a href="#">GUIDELINES</a>
+        <a href="#">SUPPORT</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
